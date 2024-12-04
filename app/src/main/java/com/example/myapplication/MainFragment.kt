@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.myapplication.databinding.FragmentMainBinding
+import com.example.myapplication.MainFragmentArgs
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,12 +47,18 @@ class MainFragment : Fragment() {
 
     private fun initView() {
         binding.tvMain.setOnClickListener {
-            var bundle = Bundle()
-            bundle.putString("key1", "1")
-            bundle.putString("key2", "2")
-            bundle.putString("key3", "3")
+//            var bundle = Bundle()
+//            bundle.putString("key1", "1")
+//            bundle.putString("key2", "2")
+//            bundle.putString("key3", "3")
+//            Navigation.findNavController(it)
+//                .navigate(R.id.action_mainFragment_to_secondFragment, bundle)
+
+            var bundle =
+                MainFragmentArgs.Builder().setUserName("王小训").setAge(20).build().toBundle()
             Navigation.findNavController(it)
                 .navigate(R.id.action_mainFragment_to_secondFragment, bundle)
+
         }
     }
 

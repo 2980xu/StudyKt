@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -48,20 +49,9 @@ android {
         }
     }
 
-//    buildFeatures {
-//        dataBinding = true
-//    }
-
-    dataBinding {
-        enable = true
-    }
-
     buildFeatures {
         dataBinding = true
-    }
-
-    viewBinding {
-        enable = true
+        viewBinding = true
     }
 }
 
@@ -88,6 +78,6 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("io.reactivex.rxjava2:rxjava:2.2.21")
     implementation("io.reactivex.rxjava2:rxandroid:2.0.2")
-    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.8.4")
+//    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.8.4")
 
 }
