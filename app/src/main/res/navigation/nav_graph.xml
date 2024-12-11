@@ -26,4 +26,15 @@
         android:name="com.example.myapplication.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/deepLinkSettings"
+        android:name="com.example.myapplication.DeepLinkSettings"
+        android:label="fragment_deep_link_settings"
+        tools:layout="@layout/fragment_deep_link_settings">
+
+        <deepLink app:uri="www.YourWebsite.com/{params}"/>
+
+    </fragment>
+
 </navigation>

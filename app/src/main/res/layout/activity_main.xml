@@ -31,13 +31,24 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_start_service"
         android:visibility="gone"/>
 
+    <Button
+        android:id="@+id/btn_send_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="发送通知"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph" />
-
-
+        app:navGraph="@navigation/nav_graph"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_send_notification"
+        app:layout_constraintTop_toBottomOf="@+id/btn_send_notification"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
