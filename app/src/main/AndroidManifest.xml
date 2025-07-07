@@ -41,7 +41,7 @@
         </activity>
 
         <service
-            android:name=".jk.MyService"
+            android:name=".aj.lifecycle.MyService"
             android:enabled="true"
             android:exported="false" />
 

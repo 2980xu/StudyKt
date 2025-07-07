@@ -3,21 +3,13 @@ package com.example.myapplication
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.NotificationChannel
-import android.app.NotificationChannel.DEFAULT_CHANNEL_ID
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Intent
-import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -26,13 +18,12 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
-import com.example.myapplication.jk.MyLocationListener
+import com.example.myapplication.aj.lifecycle.MyLocationListener
 import com.example.myapplication.ui.theme.MyApplicationTheme
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.Navigation
 import com.example.myapplication.databinding.ActivityMainBinding
-import com.example.myapplication.jk.MyService
+import com.example.myapplication.aj.lifecycle.MyService
 
 class MainActivity : FragmentActivity() {
     companion object {

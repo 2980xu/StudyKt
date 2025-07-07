@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.ActivitySecondBinding
-import com.example.myapplication.viewmodel.TimerViewModel
+import com.example.myapplication.aj.viewmodel.TimerViewModel
 
 class SecondActivity : AppCompatActivity() {
     companion object {
@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivitySecondBinding
-    private lateinit var timerViewModel:TimerViewModel
+    private lateinit var timerViewModel: TimerViewModel
     private lateinit var currentSecond : MutableLiveData<Int>
 
     override fun onCreate(savedInstanceState: Bundle?) {

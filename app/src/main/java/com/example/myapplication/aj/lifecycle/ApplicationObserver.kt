@@ -1,4 +1,4 @@
-package com.example.myapplication.jk
+package com.example.myapplication.aj.lifecycle
 
 import android.util.Log
 import androidx.lifecycle.Lifecycle

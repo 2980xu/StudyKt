@@ -79,5 +79,7 @@ dependencies {
     implementation("io.reactivex.rxjava2:rxjava:2.2.21")
     implementation("io.reactivex.rxjava2:rxandroid:2.0.2")
 //    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.8.4")
+    implementation("androidx.room:room-runtime:2.2.2")
+    annotationProcessor("androidx.room:room-compiler:2.2.2")
 
 }

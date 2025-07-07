@@ -1,4 +1,4 @@
-package com.example.myapplication.jk
+package com.example.myapplication.aj.lifecycle
 
 import android.content.Intent
 import android.util.Log
