@@ -19,7 +19,7 @@ public class StudentRoom {
 
     /**
      * Room默认会使用这个构造器操作数据
-     * */
+     */
     public StudentRoom(int id, String name, String age) {
         this.id = id;
         this.name = name;
@@ -31,10 +31,10 @@ public class StudentRoom {
      * 可以使用Ignore标签，让Room忽略这个构造器
      * 不仅如此，@Ignore标签还可用于字段
      * Room不会持久化被@Ignore标签标记过的字段的数据
-     * */
+     */
     @Ignore
-    public StudentRoom(int id, String name) {
-        this.id = id;
+    public StudentRoom(String name, String age) {
         this.name = name;
+        this.age = age;
     }
 }
